@@ -1,0 +1,6 @@
+import numpy as np
+
+def euclidean_distance(x: list, y: list) -> float:
+    x = np.asarray(x, dtype = float)
+    y = np.asarray(y, dtype = float)
+    return float(np.sqrt(np.sum((x-y) ** 2)))
